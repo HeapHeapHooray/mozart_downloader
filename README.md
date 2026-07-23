@@ -1,6 +1,6 @@
 # Mozart Downloader
 
-A collection of shell scripts for downloading Windows virtual instrument installers (VSTs), sample library installation tools, DAW setups, and audio software launchers for use with **Wine on Linux**.
+A collection of shell scripts for downloading Windows virtual instrument installers (VSTs), sample library installation tools, DAW setups, utilities, and audio software launchers for use with **Wine on Linux**.
 
 ## 🎯 Purpose
 
@@ -44,7 +44,7 @@ Downloads the latest **EastWest Installation Center** Windows package (`IC_lates
 ```
 
 ### 4. EDIROL Orchestral VST (`download_edirol.sh`)
-Downloads the **EDIROL Orchestral VST** archive (`edirol_orchestral.rar`) from Google Drive as referenced in `maestro-plus-ew.sh`.
+Downloads the **EDIROL Orchestral VST** archive (`edirol_orchestral.rar`) from Google Drive.
 
 ```bash
 # Download to current directory
@@ -55,7 +55,7 @@ Downloads the **EDIROL Orchestral VST** archive (`edirol_orchestral.rar`) from G
 ```
 
 ### 5. FL Studio Windows Installer (`download_flstudio.sh`)
-Downloads the latest official 64-bit **FL Studio Windows Installer** (`flstudio_win64.exe`) from Image-Line as referenced in `maestro-plus-ew.sh`.
+Downloads the latest official 64-bit **FL Studio Windows Installer** (`flstudio_win64.exe`) from Image-Line.
 
 ```bash
 # Download to current directory
@@ -63,6 +63,17 @@ Downloads the latest official 64-bit **FL Studio Windows Installer** (`flstudio_
 
 # Download to a specific target directory
 ./download_flstudio.sh /path/to/downloads/
+```
+
+### 6. Copycat Windows Release (`download_copycat.sh`)
+Downloads the latest **Copycat Windows Release** package (`copycat-windows.zip`) from GitHub releases.
+
+```bash
+# Download to current directory
+./download_copycat.sh
+
+# Download to a specific target directory
+./download_copycat.sh /path/to/downloads/
 ```
 
 ---
@@ -84,5 +95,5 @@ Downloads the latest official 64-bit **FL Studio Windows Installer** (`flstudio_
    ```
 2. Execute any downloader script followed by your desired target directory or file path:
    ```bash
-   ./download_flstudio.sh ~/wine_installers/
+   ./download_copycat.sh ~/wine_installers/
    ```
