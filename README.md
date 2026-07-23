@@ -76,6 +76,17 @@ Downloads the latest **Copycat Windows Release** package (`copycat-windows.zip`)
 ./download_copycat.sh /path/to/downloads/
 ```
 
+### 7. LibreWave Rhapsody Player (`download_rhapsody.sh`)
+Fetches and downloads the latest Windows installer (`.exe`) for the open-source **LibreWave Rhapsody** sample player.
+
+```bash
+# Download to current directory
+./download_rhapsody.sh
+
+# Download to a specific target directory
+./download_rhapsody.sh /path/to/downloads/
+```
+
 ---
 
 ## ⚡ Features
@@ -95,5 +106,5 @@ Downloads the latest **Copycat Windows Release** package (`copycat-windows.zip`)
    ```
 2. Execute any downloader script followed by your desired target directory or file path:
    ```bash
-   ./download_native_access_legacy.sh ~/wine_installers/
+   ./download_rhapsody.sh ~/wine_installers/
    ```
