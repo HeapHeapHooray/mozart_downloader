@@ -10,15 +10,15 @@ Running Windows audio software, DAWs, and plugin management tools on Linux via *
 
 All scripts accept an optional target path or directory as their first argument (`$1`). If no target is specified, files are saved in the current working directory.
 
-### 1. Native Access 1.14.1 Installer (`download_native_access.sh`)
+### 1. Native Access Legacy 1.14.1 Installer (`download_native_access_legacy.sh`)
 Downloads the legacy **Native Access 1.14.1 PC Setup** executable from Archive.org.
 
 ```bash
 # Download to current directory
-./download_native_access.sh
+./download_native_access_legacy.sh
 
 # Download to a specific directory or custom target path
-./download_native_access.sh /path/to/downloads/
+./download_native_access_legacy.sh /path/to/downloads/
 ```
 
 ### 2. Orchestral Tools SINE Player (`download_sine.sh`)
@@ -95,5 +95,5 @@ Downloads the latest **Copycat Windows Release** package (`copycat-windows.zip`)
    ```
 2. Execute any downloader script followed by your desired target directory or file path:
    ```bash
-   ./download_copycat.sh ~/wine_installers/
+   ./download_native_access_legacy.sh ~/wine_installers/
    ```
