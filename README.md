@@ -11,7 +11,7 @@ Running Windows audio software, DAWs, and plugin management tools on Linux via *
 All scripts accept an optional target path or directory as their first argument (`$1`). If no target is specified, files are saved in the current working directory.
 
 ### 1. Native Access Legacy 1.14.1 Installer (`download_native_access_legacy.sh`)
-Downloads the legacy **Native Access 1.14.1 PC Setup** executable from Archive.org.
+Downloads the legacy **Native Access 1.14.1 PC Setup** executable from Archive.org / fast mirror.
 
 ```bash
 # Download to current directory
@@ -87,6 +87,17 @@ Fetches and downloads the latest Windows installer (`.exe`) for the open-source 
 ./download_rhapsody.sh /path/to/downloads/
 ```
 
+### 8. Splice Desktop App (`download_splice.sh`)
+Downloads the latest official **Splice Desktop App** Windows installer (`splice.exe`).
+
+```bash
+# Download to current directory
+./download_splice.sh
+
+# Download to a specific target directory
+./download_splice.sh /path/to/downloads/
+```
+
 ---
 
 ## ⚡ Features
@@ -106,5 +117,5 @@ Fetches and downloads the latest Windows installer (`.exe`) for the open-source 
    ```
 2. Execute any downloader script followed by your desired target directory or file path:
    ```bash
-   ./download_rhapsody.sh ~/wine_installers/
+   ./download_splice.sh ~/wine_installers/
    ```
