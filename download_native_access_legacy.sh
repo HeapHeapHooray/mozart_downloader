@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# Default URL
-URL="https://archive.org/download/native-access-installer-211108/Native%20Access%201.14.1%20Setup%20PC.exe"
-DEFAULT_FILENAME="Native Access 1.14.1 Setup PC.exe"
+# Fast mirror URL
+URL="https://archive.ph/o/Um1lZ/https://www.native-instruments.com/fileadmin/downloads/Native_Access_Installer_211108.zip"
+DEFAULT_FILENAME="Native_Access_Installer_211108.zip"
 
 # Target location from first argument (optional)
 TARGET="${1:-.}"
@@ -21,7 +21,7 @@ else
 fi
 
 echo "=========================================="
-echo "Native Access Installer Downloader"
+echo "Native Access Legacy Installer Downloader"
 echo "=========================================="
 echo "Source: $URL"
 echo "Target: $DEST_PATH"
