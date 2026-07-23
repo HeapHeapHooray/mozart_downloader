@@ -1,6 +1,6 @@
 # Mozart Downloader
 
-A collection of shell scripts for downloading Windows virtual instrument installers (VSTs), sample library installation tools, and audio software launchers for use with **Wine on Linux**.
+A collection of shell scripts for downloading Windows virtual instrument installers (VSTs), sample library installation tools, and audio software launchers for use with **Wine on Linux**. Made with Gemini ! 🚀
 
 ## 🎯 Purpose
 
