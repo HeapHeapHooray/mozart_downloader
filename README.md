@@ -98,6 +98,17 @@ Downloads the latest official **Splice Desktop App** Windows installer (`splice.
 ./download_splice.sh /path/to/downloads/
 ```
 
+### 9. ACE Studio Windows Installer (`download_ace.sh`)
+Fetches and downloads the latest **ACE Studio** Windows installer (`ACE_Studio_*.exe`) from the official ACE Studio API.
+
+```bash
+# Download to current directory
+./download_ace.sh
+
+# Download to a specific target directory
+./download_ace.sh /path/to/downloads/
+```
+
 ---
 
 ## ⚡ Features
