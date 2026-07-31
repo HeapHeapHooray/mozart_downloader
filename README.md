@@ -10,7 +10,18 @@ Running Windows audio software, DAWs, and plugin management tools on Linux via *
 
 All scripts accept an optional target path or directory as their first argument (`$1`). If no target is specified, files are saved in the current working directory.
 
-### 1. Native Access Legacy 1.14.1 Installer (`download_native_access_legacy.sh`)
+### 1. Native Access 2 Installer (`download_native_access.sh`)
+Fetches and downloads the latest official **Native Access 2** Windows installer (`Native-Access_2.exe`) from Native Instruments.
+
+```bash
+# Download to current directory
+./download_native_access.sh
+
+# Download to a specific target directory
+./download_native_access.sh /path/to/downloads/
+```
+
+### 2. Native Access Legacy 1.14.1 Installer (`download_native_access_legacy.sh`)
 Downloads the legacy **Native Access 1.14.1 PC Setup** executable from Archive.org / fast mirror.
 
 ```bash
