@@ -120,6 +120,17 @@ Fetches and downloads the latest **ACE Studio** Windows installer (`ACE_Studio_*
 ./download_ace.sh /path/to/downloads/
 ```
 
+### 10. Synful Orchestra Windows Installer (`download_synful.sh`)
+Fetches and downloads the latest **Synful Orchestra** Windows setup package (`SynfulOrchestraSetup-*.zip`) from Synful's download page.
+
+```bash
+# Download to current directory
+./download_synful.sh
+
+# Download to a specific target directory
+./download_synful.sh /path/to/downloads/
+```
+
 ---
 
 ## ⚡ Features
