@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-PAGE_URL="https://www.native-instruments.com/en/specials/native-access/"
+PAGE_URL="https://www.native-instruments.com/pages/native-access"
 TARGET="${1:-.}"
 
 echo "Fetching Native Access download page..."
 PAGE_HTML=$(curl -sL "$PAGE_URL" || true)
 
 # Extract Windows installer URL (.exe) or fallback to official download URL
-INSTALLER_PATH=$(echo "$PAGE_HTML" | grep -oE 'href="[^"]*Native-Access[^"]*\.exe"' | head -n 1 | cut -d'"' -f2 || true)
+INSTALLER_PATH=$(echo "$PAGE_HTML" | grep -oE '(https?://|/)[^"&<>\\]*Native-Access[^"&<>\\]*\.exe' | head -n 1 || true)
 
 if [ -n "$INSTALLER_PATH" ]; then
     if [[ "$INSTALLER_PATH" =~ ^https?:// ]]; then
@@ -17,7 +17,7 @@ if [ -n "$INSTALLER_PATH" ]; then
         INSTALLER_URL="https://www.native-instruments.com/${INSTALLER_PATH#/}"
     fi
 else
-    INSTALLER_URL="https://www.native-instruments.com/fileadmin/downloads/Native-Access_2.exe"
+    INSTALLER_URL="https://storage.googleapis.com/ni-assets/downloads/Native-Access_2.exe"
 fi
 
 DEFAULT_FILENAME=$(basename "$INSTALLER_URL")
